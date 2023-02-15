@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - HTML Table &amp; CSS Table</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="hello.js"></script>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:800,500,300,700,400'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="aa_htmlTable">
+  <h1> LEAD'OMETER </h1>
+  <p> זו מערכת ממוחשבת שהונדסה במיוחד כדי לזהות תכונות של מנהיגות בטקסט שנכתב על ידי מועמדים לתכנית ליד. לאחר שתעלו תיקייה ותשלחו אותה, תוכלו לראות מי מבין המומעדים דורג כמתאים ביותר לפי האלגוריתם שלנו</p>
+	<!-- <div id="container">
+    <div id="drop_zone" ondrop="dropHandler(event);">
+      <p>Drag one or more files to this <i>drop zone</i>.</p>
+    </div>
+    <button id="drop_zone2" ondrop="dropHandler(event);">
+      <p>Drag one or more files to this <i>drop zone</i>.</p>
+    </button>
+  </div>
+  <div id="drop-area">
+    <form class="my-form">
+      <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+      <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+      <label class="button" for="fileElem">Select some files</label>
+    </form>
+  </div> -->
+  
+  <div id = "my_form">
+		<label for="file">בחר תיקייה</label>
+		<input type="file" webkitdirectory mozdirectory id="file" name="file"><br><br>
+		<button onclick="sendFiles()"> Upload </button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>מועמדים</th>
+        <th>מידת התאמה</th>
+        <th>תאריך</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>יוסי כהן</td>
+        <td>98%</td>
+        <td>23.01.23</td>
+      </tr>
+      <tr>
+        <td>ישראל ישראלי</td>
+        <td>73%</td>
+        <td>4.02.23</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>אבנר לוי</td>
+        <td>55%</td>
+        <td>10.02.23</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+
+<div class="aa_css">
+  
+  <h2 class="aa_h2">CSS Table</h2>
+
+  <div class="table">
+    <div class="thead">
+      <div class="tr">
+        <div class="th">.table > .thead > .tr > .th</div>
+        <div class="th">.table > .thead > .tr > .th</div>
+      </div>
+    </div>
+    <div class="tbody">
+      <div class="tr">
+        <div class="td">
+          .table > .tbody > .tr > .td 
+        </div>
+        <div class="td">
+          .table > .tbody > .tr > .td
+        </div>
+      </div>
+      <div class="tr">
+        <div class="td">
+          .table > .tbody > .tr > .td
+        </div>
+        <div class="td">
+          .table > .tbody > .tr > .td
+        </div>
+      </div>
+    </div>
+    <div class="tfoot">
+      <div class="tr">
+        <div class="td">
+          .table > .tfoot > .tr > .td
+        </div>
+        <div class="td">
+          .table > .tfoot > .tr > .td
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="aa_ahmadawais">
+  Developed by  <a href="http://AhmadAwais.com/about">Ahmad Awais</a> - Open Source Engineer & Dev Advocate
+</div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
