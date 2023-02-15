@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e059cac8-fa13-41ef-a2d1-d41f6c349f3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/alg_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text_md.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alg_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/alg_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
