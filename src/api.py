@@ -20,6 +20,7 @@ def get_result():
         "metadata": {
             "strict": Number 0-3 (see enums/strictness.py),
             "text_type": Number 1-3 (see enums/text_types.py)
+            "is_zip": If true, alerts the lead_alg to unpack the zip and return array of results.
         },
         "data": Base64 encoded data that is the text files to convert.
     }
@@ -40,8 +41,12 @@ def get_result():
         text = base64.decodebytes(request_dict["data"].encode())
         strict = request_dict["metadata"]["strict"]
         text_type = request_dict["metadata"]["type"]
+        is_zip = request_dict["metadata"]["is_zip"]
 
-        return str(LeadAlg.run(text, strict, text_type)), OK
+        try:
+            return str(LeadAlg.run(text, strict, text_type, is_zip)), OK
+        except Exception as e:
+            return '', BAD_REQUEST
 
     except KeyError:
         return '', BAD_REQUEST
