@@ -27,7 +27,7 @@ class LeadAlg:
                     continue
                 texts.append((filename, zipped_texts.open(filename).read()))
         else:
-            texts.append(('', target_file.decode()))
+            texts.append(("", target_file.decode()))
 
         with open(PIPELINES[text_type], "rb") as pipeline_file:
             results = {}
