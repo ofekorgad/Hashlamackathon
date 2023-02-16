@@ -63,7 +63,6 @@ def get_result():
             return '', BAD_REQUEST
 
     except KeyError:
-        print("fuck")
         return '', BAD_REQUEST
 
 

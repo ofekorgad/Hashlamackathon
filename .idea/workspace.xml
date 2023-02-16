@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e059cac8-fa13-41ef-a2d1-d41f6c349f3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enums/text_types.py" beforeDir="false" afterPath="$PROJECT_DIR$/enums/text_types.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/zipped_texts.zip" beforeDir="false" afterPath="$PROJECT_DIR$/example/zipped_texts.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/dist/hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/hello.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/dist/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/dist/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipelines/generic" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/generic" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lead_alg.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/lead_alg.py" afterDir="false" />
     </list>
@@ -43,7 +46,7 @@
       <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.api">
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Hashlamackathon" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,6 +147,11 @@
           <url>file://$PROJECT_DIR$/example/main.py</url>
           <line>25</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/lead_alg.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

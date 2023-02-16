@@ -12,23 +12,6 @@ body {
   flex-direction: row;
 }
 
-#my_form {
-  border: 2px solid green;
-  background-color: greenyellow;
-  text-align: center;
-  width: 350px;
-  height: 150px;
-  margin: auto;
-  border-radius: 20px;
-}
-#drop_zone2 {
-  border: 2px solid blue;
-  fill: lightblue;
-  width: 200px;
-  height: 200px;
-  margin-right: auto;
-  margin-left: 30px
-}
 
 
 * {
@@ -43,38 +26,6 @@ body {
   text-transform: uppercase;
 }
 
-table {
-  background: #fff;
-}
-
-table, thead, tbody, tfoot, tr, td, th {
-  text-align: center;
-  margin: auto;
-  border: 1px solid #000000;
-  padding: 1rem;
-  width: 50%;
-}
-
-.table {
-  display: table;
-  width: 50%;
-}
-
-.tr {
-  display: table-row;
-}
-
-.thead {
-  display: table-header-group;
-}
-
-.tbody {
-  display: table-row-group;
-}
-
-.tfoot {
-  display: table-footer-group;
-}
 
 .col {
   display: table-column;
@@ -84,51 +35,11 @@ table, thead, tbody, tfoot, tr, td, th {
   display: table-column-group;
 }
 
-.td, .th {
-  display: table-cell;
-  width: 50%;
-}
 
 .caption {
   display: table-caption;
 }
 
-.table,
-.thead,
-.tbody,
-.tfoot,
-.tr,
-.td,
-.th {
-  text-align: center;
-  margin: auto;
-  padding: 1rem;
-}
-
-.table {
-  background: rgba(255, 220, 137, 0.808);
-  margin: auto;
-  border: none;
-  padding: 0;
-  margin-bottom: 5rem;
-}
-
-.th {
-  font-weight: 700;
-  border: 1px solid rgba(255, 220, 137, 0.808);
-}
-.th:nth-child(odd) {
-  border-right: none;
-}
-
-.td {
-  font-weight: 300;
-  border: 1px solid rgba(255, 220, 137, 0.808);
-  border-top: none;
-}
-.td:nth-child(odd) {
-  border-right: none;
-}
 
 .aa_htmlTable {
   background: rgba(255, 220, 137, 0.808);
@@ -153,4 +64,122 @@ table, thead, tbody, tfoot, tr, td, th {
   width: 100%;
   font: 100 1.2rem/2 Roboto;
   margin: 5rem auto;
+}
+
+
+.table-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+table {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto 0;
+  border-collapse: collapse;
+}
+
+thead {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-image: url("https://img.freepik.com/premium-photo/top-view-colorful-windy-blue-sea-texture-elements-this-image-furnished-by-nasa_720095-43.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}
+
+tbody td:first-of-type {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+tbody td:last-of-type {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+tbody td {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:last-of-type td {
+  border-bottom: none;
+}
+
+.title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100px;
+  background-image: url("https://img.freepik.com/free-photo/marbled-blue-abstract-background-liquid-marble-pattern_1258-103568.jpg?w=2000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.title {
+  font-family: 'Montserrat', cursive;
+  font-size: 3rem;
+  justify-self: center;
+  margin-left:32% ;
+}
+
+.description-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5;
+  color: #333;
+}
+
+.drop-box {
+  border: 3px dashed #bbb;
+  border-radius: 5px;
+  padding: 50px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #333;
+}
+
+.drop-message {
+  margin: 0;
+  padding: 0;
+}
+
+
+.logo {
+  height: 100%;
+  align-self: center;
+  opacity: 0.5;
+  z-index: 9999;
+  pointer-events: none;
 }
