@@ -1,6 +1,8 @@
+import json
 import base64
 from lead_alg import LeadAlg
-from flask import Flask, request
+from flask import Flask, request, Response
+from flask_cors import cross_origin
 
 
 # HTTP response codes
@@ -9,6 +11,13 @@ BAD_REQUEST = 400
 
 
 api = Flask(__name__)
+api.config['CORS_HEADERS'] = 'Content-Type'
+
+
+@api.route("/run", methods=["OPTIONS"])
+@cross_origin()
+def options():
+    return Response(headers='access-control-allow-origin: "*"')
 
 
 @api.route("/run", methods=["POST"])
@@ -32,10 +41,11 @@ def get_result():
     """
     if request.headers.get("Content-Type") != "application/json":
         # Bad request HTTP response
-        return '', BAD_REQUEST
+        print(request.headers.get("Content-Type"))
+        # return '', BAD_REQUEST
 
     try:
-        request_dict = request.get_json()
+        request_dict = json.loads(request.get_data().decode())
 
         # Unpack JSON
         text = base64.decodebytes(request_dict["data"].encode())
@@ -44,11 +54,16 @@ def get_result():
         is_zip = request_dict["metadata"]["is_zip"]
 
         try:
-            return str(LeadAlg.run(text, strict, text_type, is_zip)), OK
+            response = Response(json.dumps(LeadAlg.run(text, strict, text_type, is_zip)), mimetype="application/json")
+            response.headers.add("Access-Control-Allow-Origin", "*")
+            return response
+
         except Exception as e:
+            print(e)
             return '', BAD_REQUEST
 
     except KeyError:
+        print("fuck")
         return '', BAD_REQUEST
 
 

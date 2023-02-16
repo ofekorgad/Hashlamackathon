@@ -2,6 +2,6 @@ from enum import Enum
 
 
 class TextType(Enum):
-    Essay = 1,
-    SocialMedia = 2,
-    Generic = 3
+    Generic = 0
+    SocialMedia = 1
+    Essay = 2
